@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Pretty Baby</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="desktop">
+
+<div id="sticker1">★</div>
+<div id="sticker2">:)</div>
+<div id="sticker3">CD</div>
+
+<div class="icon" onclick="openWindow('computer')">
+<img src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png">
+<span>My Computer</span>
+</div>
+
+<div class="icon" onclick="openWindow('documents')">
+<img src="https://cdn-icons-png.flaticon.com/512/716/716784.png">
+<span>Documents</span>
+</div>
+
+<div class="icon" onclick="openWindow('photos')">
+<img src="https://cdn-icons-png.flaticon.com/512/1375/1375106.png">
+<span>Photos</span>
+</div>
+
+<div class="icon" onclick="openWindow('music')">
+<img src="https://cdn-icons-png.flaticon.com/512/3659/3659784.png">
+<span>Music</span>
+</div>
+
+<div class="icon" onclick="openWindow('messenger')">
+<img src="https://cdn-icons-png.flaticon.com/512/9068/9068756.png">
+<span>Messenger</span>
+</div>
+
+<div class="icon" onclick="openWindow('terminal')">
+<img src="https://cdn-icons-png.flaticon.com/512/1792/1792899.png">
+<span>Terminal</span>
+</div>
+
+</div>
+
+<div class="window" id="computer">
+<div class="titlebar">
+<span>My Computer</span>
+<button onclick="closeWindow('computer')">✕</button>
+</div>
+
+<div class="content">
+<h3>System Information</h3>
+
+<p>Computer Name: MY PRETTY BABY</p>
+<p>Operating System: Y2K Edition</p>
+<p>RAM: 1024 MB</p>
+<p>Most Active Process:</p>
+
+<pre>thinking_about_user.exe</pre>
+
+<button onclick="openWindow('system32')">
+Open system32
+</button>
+</div>
+</div>
+
+<div class="window" id="documents">
+<div class="titlebar">
+<span>Documents</span>
+<button onclick="closeWindow('documents')">✕</button>
+</div>
+
+<div class="content">
+
+<h3>Files</h3>
+
+<div class="file" onclick="openNote('note1')">
+readme.txt
+</div>
+
+<div class="file" onclick="openNote('note2')">
+diagnostics.txt
+</div>
+
+<div class="file" onclick="openNote('note3')">
+system_log.txt
+</div>
+
+</div>
+</div>
+
+<div class="window" id="photos">
+<div class="titlebar">
+<span>Photos</span>
+<button onclick="closeWindow('photos')">✕</button>
+</div>
+
+<div class="content">
+
+<h3>Photos</h3>
+
+<img class="photo" src="assets/photo1.jpg">
+<img class="photo" src="assets/photo2.jpg">
+<img class="photo" src="assets/photo3.jpg">
+
+<p>
+Replace these with your own photos.
+</p>
+
+</div>
+</div>
+
+<div class="window" id="music">
+<div class="titlebar">
+<span>Music</span>
+<button onclick="closeWindow('music')">✕</button>
+</div>
+
+<div class="content">
+
+<h3>Playlist</h3>
+
+<p>
+Put your music website link below:
+</p>
+
+<a href="#" target="_blank">
+Open Playlist
+</a>
+
+</div>
+</div>
+
+<div class="window" id="messenger">
+<div class="titlebar">
+<span>Messenger</span>
+<button onclick="closeWindow('messenger')">✕</button>
+</div>
+
+<div class="content">
+
+<h3>Friends Online</h3>
+
+<div class="contact">
+Trisha
+<br>
+Status: Online
+</div>
+
+</div>
+</div>
+
+<div class="window" id="terminal">
+<div class="titlebar">
+<span>Terminal</span>
+<button onclick="closeWindow('terminal')">✕</button>
+</div>
+
+<div class="content">
+
+<pre id="terminalOutput">
+Type help below.
+</pre>
+
+<input
+id="terminalInput"
+placeholder="command..."
+onkeydown="terminalCommand(event)"
+>
+
+</div>
+</div>
+
+<div class="window" id="system32">
+<div class="titlebar">
+<span>system32</span>
+<button onclick="closeWindow('system32')">✕</button>
+</div>
+
+<div class="content">
+
+<h3>Access Restricted</h3>
+
+<input
+type="password"
+id="passwordBox"
+placeholder="Password"
+>
+
+<button onclick="checkPassword()">
+Unlock
+</button>
+
+<p id="passwordMessage"></p>
+
+</div>
+</div>
+
+<div class="window" id="secret">
+<div class="titlebar">
+<span>final_message.txt</span>
+<button onclick="closeWindow('secret')">✕</button>
+</div>
+
+<div class="content">
+
+<h2>Hey.</h2>
+
+<p>
+If you've reached this folder,
+you explored everything.
+
+I knew you would.
+
+Thank you for every conversation,
+every joke,
+every memory.
+
+You're important to me.
+
+♡
+</p>
+
+</div>
+</div>
+
+<div id="taskbar">
+
+<button id="startButton">
+Start
+</button>
+
+<div id="clock"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
